@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #ffb900;
+  --secondary-color: #171100;
+  --text-color: #5f5b53;
+  --white-color: #ffffff;
+}
+
 * {
   /* Chỉnh lại kích thước theo weith height hiện thị trong code bao gồm cả padding và border */
   box-sizing: border-box;
@@ -12,18 +19,22 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.header {
+  position: sticky; /* Cố định header */
+  top: 0; /* Đặt header ở trên cùng */
+  left: 0;
+  width: 100%; /* Đảm bảo header chiếm toàn bộ chiều rộng */
+  z-index: 1000; /* Đảm bảo header nằm trên các phần tử khác */
+  background-color: #fffcf4; /* Đặt màu nền để header không bị trong suốt */
+  padding: 8px 0;
+}
+
 .main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
 }
-
-.header {
-  background-color: blanchedalmond;
-  padding: 8px 0px 8px;
-}
-
 a {
   text-decoration: none;
 }
@@ -81,15 +92,167 @@ button {
   color: aliceblue;
   background-color: black;
   line-height: 4.8rem;
-  border-radius: 24.5px;
+  border-radius: 2.45rem;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .button-sign-in {
   padding-left: 3rem;
 }
 
-img .hero-img {
-  width: 470px;
-  height: 685px;
-  border-radius: 20px;
+.hero {
+  background-color: #fffcf4;
+  width: 100%;
+  height: 85rem;
+}
+
+main .hero .main-media,
+main .hero .main-text {
+  flex: 1;
+  margin: 0;
+}
+
+main .hero .main-content {
+  display: flex;
+  align-items: center;
+}
+
+.hero .main-media .body,
+.hero .main-text .body {
+  width: 100%;
+  height: 68.5rem;
+  z-index: 1;
+  margin-top: 10rem;
+}
+
+.hero .main-media .body img {
+  width: 47rem;
+  height: 68.5rem;
+  border-radius: 2rem;
+}
+
+.hero .main-media .body .hero-sumary {
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  border-radius: 2rem;
+  width: 27rem;
+  left: 45rem;
+  top: 60rem;
+}
+
+.hero .main-media .body .hero-sumary .item {
+  display: flex;
+  padding: 1rem;
+}
+
+.hero .main-media .body .hero-sumary .item .icon {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #ece7e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .main-media .body .hero-sumary .item .icon img {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 0px;
+}
+
+.hero .main-media .body .hero-sumary .item .info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+.hero .main-media .body .hero-sumary .item .info .label {
+  font-size: 1.4rem;
+  color: #5f5b53;
+}
+
+.hero .main-media .body .hero-sumary .item .info .title {
+  padding-top: 1.5rem;
+  font-size: 1.8rem;
+  color: black;
+  font-weight: bold;
+}
+
+main .hero .main-text .body .line {
+  margin-left: 10rem;
+}
+
+main .hero .main-text .body .line1 {
+  font-size: 5.8rem;
+}
+
+main .hero .main-text .body .line2 {
+  margin-top: 22px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+}
+
+main .hero .main-text .body .line3 {
+  display: flex;
+  align-items: center;
+  margin-top: 3.8rem;
+}
+
+main .hero .main-text .body .line3 .button-watch-video {
+  margin-left: 5rem;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+main .hero .main-text .body .line3 .button-see-courses button {
+  min-width: 180px;
+  background-color: var(--primary-color);
+  border: none;
+}
+
+main .hero .main-text .body .line3 .button-watch-video .icon {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+main .hero .main-text .body .line3 .button-watch-video button {
+  margin-left: 2rem;
+  color: black;
+  background-color: #fff;
+  border: none;
+}
+
+main .hero .main-text .body .line4 {
+  margin-top: 4.8rem;
+  font-size: 1.8rem;
+  color: #5f5b53;
+}
+
+main .hero .main-text .body .line5 {
+  margin-top: 2rem;
+  display: flex;
+}
+
+main .hero .main-text .body .line5 .line5-1,
+main .hero .main-text .body .line5 .line5-3 {
+  font-size: 4.4rem;
+  margin-right: 15px;
+}
+
+main .hero .main-text .body .line5 .line5-2,
+main .hero .main-text .body .line5 .line5-4 {
+  font-size: 1.8rem;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
 }
