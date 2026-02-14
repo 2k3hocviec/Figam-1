@@ -381,3 +381,48 @@ main .hero .main-text .body .line5 .line5-4 {
 .popular .duoi .info .text .foot .price {
   font-weight: bold;
 }
+
+.feedback {
+  min-height: 38rem;
+  margin-top: 21rem;
+  padding: 4rem 0;
+  background-color: #2e2100;
+  color: white;
+}
+
+.feedback .main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.feedback .profile .main-picture {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+
+.feedback .profile .name {
+  margin-top: 1.3rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.feedback .profile .course {
+  margin-top: 0.4rem;
+  font-size: 1.4rem;
+}
+
+.feedback .profile .dots {
+  gap: 10px;
+  display: flex;
+  margin-top: 28px;
+}
+
+.feedback .main-content .content {
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.54;
+  width: 80rem;
+}
