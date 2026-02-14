@@ -320,9 +320,28 @@ main .hero .main-text .body .line5 .line5-4 {
   align-items: center;
 }
 
-.popular .tren .control img {
+.popular .tren .control .left,
+.popular .tren .control .right {
+  width: 7rem;
+  height: 7rem;
   padding: 1rem;
   cursor: pointer;
+  font-size: 5rem;
+  color: var(--primary-color);
+  border: 0.1rem solid var(--primary-color);
+  border-radius: 50%;
+  margin: 1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center; /* giữa ngang */
+  align-items: center; /* giữa dọc */
+  line-height: 1;
+}
+
+.popular .tren .control .left:hover,
+.popular .tren .control .right:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
 
 .popular .duoi {
@@ -381,6 +400,8 @@ main .hero .main-text .body .line5 .line5-4 {
 .popular .duoi .info .text .foot .price {
   font-weight: bold;
 }
+
+/* Feedback */
 
 .feedback {
   min-height: 38rem;
