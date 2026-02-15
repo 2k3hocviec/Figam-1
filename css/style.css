@@ -448,8 +448,13 @@ main .hero .main-text .body .line5 .line5-4 {
   width: 80rem;
 }
 
-.features {
+/* Code cho features */
+
+.features > * {
   margin-top: 13.5rem;
+}
+
+.features {
   width: 117rem;
   max-width: calc(100% - 4.8rem);
   height: 64.5rem;
@@ -457,7 +462,8 @@ main .hero .main-text .body .line5 .line5-4 {
   margin-right: auto;
 }
 
-.features .first {
+.features .first,
+.features .second {
   display: flex;
   gap: 10rem;
 }
@@ -467,44 +473,46 @@ main .hero .main-text .body .line5 .line5-4 {
   gap: 3rem;
 }
 
-.features .first .images img {
+.features .images img {
   max-width: 27rem;
+  min-width: 27rem;
   border-radius: 4rem;
+  object-fit: cover;
 }
 
 .features .first .images .img-left {
-  max-width: 27rem;
-  border-radius: 4rem;
   margin-top: 5rem;
 }
 
 .features .first .images .img-right {
-  max-width: 27rem;
-  border-radius: 4rem;
   margin-bottom: 5rem;
 }
 
-.features .first .content {
+.features .content {
   display: flex;
   flex-direction: column;
   gap: 5rem;
 }
 
-.features .first .content .head {
+.features .content .head {
   margin-top: 10rem;
 }
 
-.features .first .content .foot {
+.features .content .foot {
   display: flex;
   justify-content: center;
 }
 
-.features .first .content .foot button {
+.features .content .foot button {
   color: var(--white-color);
   background-color: var(--primary-color);
 }
 
-.features .first .content .foot button:hover {
+.features .content .foot button:hover {
   color: var(--white-color);
   background-color: var(--text-color);
+}
+
+.features .second .images img {
+  max-width: 50rem;
 }
