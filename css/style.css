@@ -447,3 +447,64 @@ main .hero .main-text .body .line5 .line5-4 {
   line-height: 1.54;
   width: 80rem;
 }
+
+.features {
+  margin-top: 13.5rem;
+  width: 117rem;
+  max-width: calc(100% - 4.8rem);
+  height: 64.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features .first {
+  display: flex;
+  gap: 10rem;
+}
+
+.features .first .images {
+  display: flex;
+  gap: 3rem;
+}
+
+.features .first .images img {
+  max-width: 27rem;
+  border-radius: 4rem;
+}
+
+.features .first .images .img-left {
+  max-width: 27rem;
+  border-radius: 4rem;
+  margin-top: 5rem;
+}
+
+.features .first .images .img-right {
+  max-width: 27rem;
+  border-radius: 4rem;
+  margin-bottom: 5rem;
+}
+
+.features .first .content {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.features .first .content .head {
+  margin-top: 10rem;
+}
+
+.features .first .content .foot {
+  display: flex;
+  justify-content: center;
+}
+
+.features .first .content .foot button {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.features .first .content .foot button:hover {
+  color: var(--white-color);
+  background-color: var(--text-color);
+}
