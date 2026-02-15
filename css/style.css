@@ -543,6 +543,7 @@ main .hero .main-text .body .line5 .line5-4 {
 
 .blogs .list-box .box {
   border: 0.1rem solid black;
+  border-radius: 3rem;
 }
 
 .blogs .list-box .images {
@@ -571,4 +572,49 @@ main .hero .main-text .body .line5 .line5-4 {
 .blogs .info .button {
   text-align: center;
   margin-bottom: 5rem;
+}
+
+.blogs .dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+/* footer */
+
+footer {
+  background-color: #2e2100;
+  margin-top: 13.5rem;
+  color: var(--white-color);
+}
+
+footer .tren {
+  padding: 10rem 0rem 10rem 0rem;
+  display: flex;
+  gap: 3rem;
+}
+
+footer .tren > div {
+  flex: 1;
+}
+
+footer .tren .item {
+  margin-top: 3rem;
+}
+
+footer .tren .Company .title,
+footer .tren .Address .title,
+footer .tren .Support .title {
+  border-bottom: 1px solid var(--white-color);
+  width: 5rem;
+}
+
+footer .duoi {
+  border-top: 1px solid var(--white-color);
+  text-align: center;
+}
+
+footer .duoi div {
+  padding: 5rem;
 }
