@@ -121,6 +121,10 @@ button {
   padding-left: 3rem;
 }
 
+.header__logo {
+  width: 10rem;
+}
+
 /* Phần main hero */
 
 .hero {
@@ -148,10 +152,11 @@ main .hero .main-content {
   margin-top: 10rem;
 }
 
-.hero .main-media .body img {
+.main-media-img {
   width: 47rem;
   height: 68.5rem;
   border-radius: 2rem;
+  object-fit: cover;
 }
 
 .hero .main-media .body .hero-summary {
@@ -192,13 +197,13 @@ main .hero .main-content {
 }
 
 .hero .main-media .body .hero-summary .item .info .label {
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: #5f5b53;
 }
 
 .hero .main-media .body .hero-summary .item .info .title {
   padding-top: 1.5rem;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   color: black;
   font-weight: bold;
 }
@@ -347,14 +352,15 @@ main .hero .main-text .body .line5 .line5-4 {
   gap: 30px;
 }
 
-.popular .duoi .box1,
-.popular .duoi .box2,
-.popular .duoi .box3 {
+.popular .box1,
+.popular .box2,
+.popular .box3 {
   margin-top: 10rem;
   display: flex;
   border-radius: 1.5rem;
   gap: 3rem;
   border: 1px solid black;
+  width: 40rem;
 }
 
 .popular .duoi .info img {
@@ -378,10 +384,16 @@ main .hero .main-text .body .line5 .line5-4 {
   align-items: center;
 }
 
-.popular .duoi .info .text .desc {
+.popular__desc {
   margin: 2rem 0rem;
   line-height: 3rem;
+  width: 30rem;
   color: var(--text-color);
+}
+
+.popular__info-img {
+  height: 30rem;
+  object-fit: cover;
 }
 
 .popular .duoi .info .text .foot {
