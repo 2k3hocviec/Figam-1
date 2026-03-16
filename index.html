@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>Figma_1</title>
+    <title>Hoi An Ancient Town</title>
 </head>
 
 <body>
@@ -37,7 +37,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="button-sign-in">
+                <div class="header__signin-button">
                     <button>Sign in</button>
                 </div>
             </div>
@@ -47,73 +47,101 @@
     <main>
         <div class="hero">
             <div class="main-content">
-                <div class="main-media">
-                    <div class="body">
-                        <img src="./img/anhtrangchhu.jpg" alt="anhtrangchu" class="main-media-img">
-                        <div class="hero-summary">
-                            <div class="item">
-                                <div class="icon">
-                                    <img src="./img/design.svg" alt="">
+                <div class="hero__search">
+                    <input type="text" placeholder="Nhập thông tin bạn muốn tìm kiếm">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="main-content__first">
+                    <div class="main-media">
+                        <div class="body">
+                            <img src="./img/anhtrangchhu.jpg" alt="anhtrangchu" class="main-media-img">
+                            <div class="hero__summary">
+                                <div class="item">
+                                    <div class="icon">
+                                        <img src="./img/design.svg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <p class="label">300+</p>
+                                        <p class="title">Hotels & Homestays</p>
+                                    </div>
                                 </div>
-                                <div class="info">
-                                    <p class="label">300+</p>
-                                    <p class="title">Hotels & Homestays</p>
+                                <div class="item">
+                                    <div class="icon">
+                                        <img src="./img/develop.svg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <p class="label">50+</p>
+                                        <p class="title">Guided Tours</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="icon">
-                                    <img src="./img/develop.svg" alt="">
-                                </div>
-                                <div class="info">
-                                    <p class="label">50+</p>
-                                    <p class="title">Guided Tours</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="icon">
-                                    <img src="./img/marketing.svg" alt="">
-                                </div>
-                                <div class="info">
-                                    <p class="label">10+</p>
-                                    <p class="title">Traditional Craft Villages</p>
+                                <div class="item">
+                                    <div class="icon">
+                                        <img src="./img/marketing.svg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <p class="label">10+</p>
+                                        <p class="title">Traditional Craft Villages</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="main-text">
-                    <div class="body">
-                        <div class="line line1">
-                            <p data-aos="animate__zoomInDown">Phố Cổ Hội An</p>
-                        </div>
-                        <div class="line line2">
-                            <p>Discover lantern-lit streets, riverside cafés, golden beaches, and centuries-old
-                                architecture in Vietnam’s most charming destination.</p>
-                        </div>
-                        <div class="line line3">
-                            <div class="button-see-courses">
-                                <button>Explore Tours</button>
+                    <div class="main-text">
+                        <div class="body">
+                            <div class="line line1">
+                                <p data-aos="animate__zoomInDown">Phố Cổ Hội An</p>
                             </div>
-                            <div class="button-watch-video">
-                                <div class="icon">
-                                    <img src="./img/play.svg" alt="">
+                            <div class="line line2">
+                                <p>Discover lantern-lit streets, riverside cafés, golden beaches, and centuries-old
+                                    architecture in Vietnam’s most charming destination.</p>
+                            </div>
+                            <div class="line line3">
+                                <div class="button-see-courses">
+                                    <button>Explore Tours</button>
                                 </div>
-                                <button>Watch Video</button>
+                                <div class="button-watch-video">
+                                    <div class="icon">
+                                        <img src="./img/play.svg" alt="">
+                                    </div>
+                                    <button>Watch Video</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="line line4">
-                            <p>UNESCO Heritage</p>
-                        </div>
-                        <div class="line line5">
-                            <div class="line5-1">30+</div>
-                            <div class="line5-2">Attractions</div>
-                            <div class="line5-3">300+</div>
-                            <div class="line5-4">Places to Stay</div>
+                            <div class="line line4">
+                                <p>UNESCO Heritage</p>
+                            </div>
+                            <div class="line line5">
+                                <div class="line5-1">30+</div>
+                                <div class="line5-2">Attractions</div>
+                                <div class="line5-3">300+</div>
+                                <div class="line5-4">Places to Stay</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+            <div class="main-content">
+                <div class="maincontent__box">
+                    <div class="panel active" style="background-image: url(./img/1.jpg);">
+                        <h3>Ven sông Thu Bồn</h3>
+                    </div>
+                    <div class="panel" style="background-image: url(./img/2.jpg);">
+                        <h3>Cà phê phố cổ</h3>
+                    </div>
+                    <div class="panel" style="background-image: url(./img/3.jpg);">
+                        <h3>Xích Lô</h3>
+                    </div>
+                    <div class="panel" style="background-image: url(./img/4.jpg);">
+                        <h3>Rằm 14</h3>
+                    </div>
+                    <div class="panel" style="background-image: url(./img/5.jpg);">
+                        <h3>Lồng đèn Phố Cổ</h3>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div class="popular">
             <div class="main-content">
                 <div class="tren">
@@ -194,6 +222,7 @@
                 </div>
             </div>
         </div>
+
         <div class="feedback">
             <div class="main-content">
                 <div class="profile">
@@ -346,8 +375,8 @@
                     Copyright ©2026 webdesign.gdn All rights reserved
                 </div>
             </div>
+            <div class="footer__circle"></div>
         </div>
-
     </footer>
 </body>
 
@@ -364,5 +393,7 @@
         animatedClassName: 'animate__animated',
     });
 </script>
+
+<script src="./js/main.js"></script>
 
 </html>
