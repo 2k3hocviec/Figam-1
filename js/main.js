@@ -43,3 +43,61 @@ elementButtonSearch.addEventListener("click", function (event) {
   elementBoxSearch.classList.toggle("zoom");
   elementInputSearch.focus();
 });
+
+// Hiệu ứng chuyển thanh trượt
+let index = 0;
+const elementPrevButton = document.querySelector(".blogs__button-prev");
+const elementNextButton = document.querySelector(".blogs__button-next");
+const listStep = document
+  .querySelector(".blogs__progress-wrapper")
+  .querySelectorAll(".blogs__step");
+const progress = document.querySelector(".blogs__progress");
+
+function statusForPrevButton(value) {
+  if (value === 0) {
+    elementPrevButton.disabled = true;
+  } else {
+    elementPrevButton.disabled = false;
+  }
+}
+
+function statusForNextButton(value) {
+  if (value === 4) {
+    elementNextButton.disabled = true;
+  } else {
+    elementNextButton.disabled = false;
+  }
+}
+
+function statusForListStep(index) {
+  listStep.forEach((item) => {
+    item.classList.remove("active");
+  });
+  listStep[index].classList.add("active");
+}
+
+function update(index) {
+  statusForPrevButton(index);
+  statusForNextButton(index);
+  progress.style.width = `${25 * index}%`;
+  statusForListStep(index);
+}
+
+elementPrevButton.addEventListener("click", function () {
+  if (index > 0) {
+    index--;
+    update(index);
+  }
+});
+
+elementNextButton.addEventListener("click", function () {
+  if (index < 5) {
+    index++;
+    update(index);
+  }
+});
+
+statusForPrevButton(0);
+
+console.log(listStep);
+console.log(progress);

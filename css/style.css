@@ -5,6 +5,8 @@
   --secondary-color: #171100;
   --text-color: #5f5b53;
   --white-color: #ffffff;
+  --progess-fill: #4343f1;
+  --progess-empty: #ccc;
   --font-heading: "Sen", sans-serif;
 }
 
@@ -154,8 +156,9 @@ button {
 }
 
 .hero__search input {
-  padding-left: 5rem;
-  width: 40rem;
+  width: 4rem;
+  padding-left: 0rem;
+
   height: 4rem;
   font-size: 2rem;
   border: 1px solid var(--secondary-color);
@@ -164,8 +167,8 @@ button {
 }
 
 .hero__search.zoom input {
-  width: 4rem;
-  padding-left: 0rem;
+  padding-left: 5rem;
+  width: 40rem;
 }
 
 .hero .main-media,
@@ -679,10 +682,89 @@ button {
 }
 
 .blogs .dots {
+  margin-top: 5rem;
+}
+
+.blogs__progress-wrapper {
   display: flex;
-  align-items: center;
+  width: 600px;
+  justify-content: space-between;
+  max-width: 100%;
+  position: relative;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.blogs__progress-wrapper::before {
+  content: "";
+  background-color: var(--progess-empty);
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.blogs__progress {
+  background-color: var(--progess-fill);
+  height: 4px;
+  width: 0%;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: width 1s;
+}
+
+.blogs__step {
+  color: var(--progess-empty);
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
   justify-content: center;
-  margin-bottom: 10rem;
+  align-items: center;
+  border: 3px solid var(--progess-empty);
+  z-index: 2;
+}
+
+.blogs__step.active {
+  color: var(--progess-fill);
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--progess-fill);
+  transition: all 0s 1s;
+}
+
+.blogs__button-wrapper {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogs__button-wrapper button {
+  background-color: var(--progess-fill);
+  border: 0px;
+  border-radius: 5rem;
+  margin: 0rem 1rem 0 1rem;
+}
+
+.blogs__button-wrapper button:disabled {
+  background-color: var(--progess-empty);
+  cursor: not-allowed;
+}
+
+.blogs__button-next:active,
+.blogs__button-prev:active {
+  transform: scale(0.7);
 }
 
 /* Hiệu ứng cho nut button */
