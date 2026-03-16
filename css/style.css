@@ -614,6 +614,7 @@ button {
 
 .features .second .images img {
   max-width: 50rem;
+  height: 60rem;
 }
 
 /* Hiệu ứng cho nút button trong feature */
