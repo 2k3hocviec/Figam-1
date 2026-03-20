@@ -900,11 +900,19 @@ footer .tren > div {
     left: 0;
     width: 100%;
     background-color: #fffcf4;
-    display: none;
+
+    /* Ẩn ban đầu */
+    opacity: 0;
+    transform: translateY(-2rem);
+    pointer-events: none;
+
+    transition: all 0.3s ease;
   }
 
   .nav.active {
-    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
   }
 
   .nav ul {
