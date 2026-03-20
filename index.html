@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <!-- animation -->
@@ -21,6 +26,7 @@
         <div class="main-content">
             <div class="body">
                 <img src="./img/hoian_logo.png" alt="Logo" class="header__logo">
+                <div class="menu-toggle">☰</div>
                 <div class="nav">
                     <ul>
                         <li>
@@ -38,7 +44,7 @@
                     </ul>
                 </div>
                 <div class="header__signin-button">
-                    <button>Sign in</button>
+                    <button class="text-warning">Sign in</button>
                 </div>
             </div>
         </div>
@@ -151,14 +157,14 @@
                             memories.</p>
                     </div>
                     <div class="popular__control" data-aos="fade-left">
-                        <div class="popular__control-button">&lt;</div>
-                        <div class="popular__control-button">&gt;</div>
+                        <div class="popular__control-button rounded-circle">&lt;</div>
+                        <div class="popular__control-button rounded-circle">&gt;</div>
                     </div>
                 </div>
                 <div class="duoi">
                     <div class="box1" data-aos="fade-left">
                         <div class="info">
-                            <img src="./img/tourdibophoco.jpg" alt="" class="popular__info-img">
+                            <img src="./img/tourdibophoco.jpg" alt="" class="popular__img">
                             <div class="text">
                                 <div class="head">
                                     <h3 class="heading-lv3">Hoi An Ancient Town Walking Tour</h3>
@@ -179,7 +185,7 @@
                     </div>
                     <div class="box2" data-aos="fade-left">
                         <div class="info">
-                            <img src="./img/3-tour-rung-dua-bay-mau.jpg" alt="" class="popular__info-img">
+                            <img src="./img/3-tour-rung-dua-bay-mau.jpg" alt="" class="popular__img">
                             <div class="text">
                                 <div class="head">
                                     <h3 class="heading-lv3">Bay Mau Coconut Forest</h3>
@@ -200,7 +206,7 @@
                     </div>
                     <div class="box3" data-aos="fade-left">
                         <div class="info">
-                            <img src="./img/tour bien an bang.jpg" alt="" class="popular__info-img">
+                            <img src="./img/tour bien an bang.jpg" alt="" class="popular__img">
                             <div class="text">
                                 <div class="head">
                                     <h3 class="heading-lv3">An Bang Beach & Sunset Experience</h3>
@@ -348,7 +354,7 @@
             <div class="tren">
                 <div class="group-17522">
                     <img src="./img/logo-white.svg" alt="" class="">
-                    <div class="item heading-lv3">Need to help for your dream Career? trust us. With Lesson, study
+                    <div class="item heading-lv3 mt-5">Need to help for your dream Career? trust us. With Lesson, study
                         becomes a lot
                         easier with us.</div>
                     <div class="item icon">
@@ -359,27 +365,27 @@
                     </div>
                 </div>
                 <div class="company">
-                    <div class="title">Company</div>
-                    <div class="item heading-lv3">About Us</div>
-                    <div class="item heading-lv3">Features</div>
-                    <div class="item heading-lv3">Our Pricing</div>
-                    <div class="item heading-lv3">Lastest News</div>
+                    <div class="title border-white border-bottom w-25">Company</div>
+                    <div class="item heading-lv3 mt-5">About Us</div>
+                    <div class="item heading-lv3 mt-5">Features</div>
+                    <div class="item heading-lv3 mt-5">Our Pricing</div>
+                    <div class="item heading-lv3 mt-5">Lastest News</div>
                 </div>
                 <div class="support">
-                    <div class="title">Support</div>
-                    <div class="item heading-lv3">FAQ's</div>
-                    <div class="item heading-lv3">Team & Conditions</div>
-                    <div class="item heading-lv3">Private Policy</div>
-                    <div class="item heading-lv3">Contact Us</div>
+                    <div class="title border-white border-bottom w-25">Support</div>
+                    <div class="item heading-lv3 mt-5">FAQ's</div>
+                    <div class="item heading-lv3 mt-5">Team & Conditions</div>
+                    <div class="item heading-lv3 mt-5">Private Policy</div>
+                    <div class="item heading-lv3 mt-5">Contact Us</div>
                 </div>
                 <div class="address">
-                    <div class="title">Address</div>
-                    <div class="item heading-lv3">Location: Thanh Nam, Hội An Đông, Hội An, Đà Nẵng</div>
-                    <div class="item heading-lv3">Email: khoahoian03022003@gmail</div>
-                    <div class="item heading-lv3">Phone: +84 375 065 207</div>
+                    <div class="title border-white border-bottom w-25">Address</div>
+                    <div class="item heading-lv3 mt-5">Location: Thanh Nam, Hội An Đông, Hội An, Đà Nẵng</div>
+                    <div class="item heading-lv3 mt-5">Email: khoahoian03022003@gmail</div>
+                    <div class="item heading-lv3 mt-5">Phone: +84 375 065 207</div>
                 </div>
             </div>
-            <div class="duoi">
+            <div class="duoi border-white border-top p-5 text-center">
                 <div class="heading-lv3">
                     Copyright ©2026 webdesign.gdn All rights reserved
                 </div>
@@ -404,5 +410,7 @@
 </script>
 
 <script src="./js/main.js"></script>
+<!-- Bootstrap js -->
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>

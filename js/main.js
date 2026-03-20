@@ -99,5 +99,9 @@ elementNextButton.addEventListener("click", function () {
 
 statusForPrevButton(0);
 
-console.log(listStep);
-console.log(progress);
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav");
+
+toggle.onclick = () => {
+  nav.classList.toggle("active");
+};

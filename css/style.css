@@ -242,7 +242,7 @@ button {
 
 .hero__summary .title {
   padding-top: 1.5rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: black;
   font-weight: bold;
 }
@@ -410,9 +410,7 @@ button {
   font-size: 5rem;
   color: var(--primary-color);
   border: 0.1rem solid var(--primary-color);
-  border-radius: 50%;
   margin: 1rem;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -443,6 +441,11 @@ button {
 .popular .duoi .info img {
   width: 100%;
   border-radius: 1.5rem;
+}
+
+.popular__img {
+  object-fit: cover;
+  height: 27rem;
 }
 
 .popular .duoi .info .text {
@@ -815,26 +818,6 @@ footer .tren > div {
   flex: 1;
 }
 
-footer .tren .item {
-  margin-top: 3rem;
-}
-
-footer .tren .company .title,
-footer .tren .address .title,
-footer .tren .support .title {
-  border-bottom: 1px solid var(--white-color);
-  width: 5rem;
-}
-
-footer .duoi {
-  border-top: 1px solid var(--white-color);
-  text-align: center;
-}
-
-footer .duoi div {
-  padding: 5rem;
-}
-
 .footer__circle {
   width: 30rem;
   height: 30rem;
@@ -851,5 +834,134 @@ footer .duoi div {
   to {
     transform: translate(-50%, -50%) scale(2);
     opacity: 0;
+  }
+}
+/* ===== NAVBAR BASE ===== */
+.header .body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+/* Nav desktop */
+.nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 2rem;
+  color: #5f5b53;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: black;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0.5rem;
+  width: 0;
+  height: 2px;
+  background-color: #171100;
+  transition: width 0.3s;
+}
+
+.nav a:hover::after {
+  width: 50%;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  body {
+    font-size: 0rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Ẩn nav mặc định */
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fffcf4;
+    display: none;
+  }
+
+  .nav.active {
+    display: block;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav a {
+    width: 100%;
+    padding: 1.5rem;
+    justify-content: flex-start;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .main-media {
+    width: 0%;
+  }
+
+  .main-media img {
+    width: 0%;
+  }
+
+  .main-text body {
+    display: flex;
+  }
+
+  .hero__summary {
+    display: none;
+  }
+
+  .features img {
+    display: none;
+  }
+
+  .popular {
+    display: none;
+  }
+
+  .hero__search.zoom input {
+    padding-left: 5rem;
+    width: 30rem;
+    font-size: small;
+  }
+
+  .main-content__first .body {
+    margin-left: -10rem;
+  }
+
+  .line5 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .duoi,
+  footer .company,
+  footer .support,
+  .group-17522 {
+    display: none;
   }
 }
